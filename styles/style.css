@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  padding: 0 22px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 4px 6px 0px #0000000d;
+}
+
+header img:first-child {
+  height: 50px;
+}
+
+header img:nth-child(2) {
+  height: 30px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+main {
+  margin-bottom: 80px;
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+}
+
+main spam {
+  width: 100vw;
+  margin: 2px;
+  padding: 13px 9px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+aside {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 259px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+aside p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 25px 25px;
+}
+
+aside span {
+  width: 100%;
+  margin: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+aside span p {
+  font-weight: 400;
+  margin-left: 5px;
+  padding: 0;
+  text-align: start;
+}
+.texto-login {
+  background-color: #dcdcdc;
+}
+
+.texto-privado {
+  background-color: #ffdede;
+}
+
+.selecionado {
+  background-image: url("imgs/check.svg");
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+/*error 404 - mensagem*/
+.error-404 {
+  position: fixed;
+  z-index: 2;
+  left: calc(50% - (300px / 2));
+  top: calc(50% - (200px / 2));
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.error-404 h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.error-404 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+/*fundo pra mensagem de error-404*/
+.fundo-escuro {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contatos {
+  width: 100%;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.contatos div {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contatos p {
+  font-weight: 400;
+  margin-left: 5px;
+  padding: 0;
+  text-align: start;
+}
+
+.contatos img {
+  width: 24px;
+}
+
+.usuario-saiu {
+  position: fixed;
+  z-index: 3;
+  bottom: 80px;
+  left: calc(50% - (300px / 2));
+  width: 300px;
+  border-radius: 20px;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*esconder*/
+.escondido {
+  display: none;
+}
+/*footer da página */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  width: 100vw;
+  padding: 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px -4px 6px 0px #0000000d;
+}
+
+footer input {
+  height: 30px;
+  width: 80%;
+  font-size: 18px;
+  color: black;
+  font-style: italic;
+  border: none;
+}
